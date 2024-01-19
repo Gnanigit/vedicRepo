@@ -68,9 +68,4 @@ app.delete('/todos/:id', async (request, response) => {
   });
 
 
-  module.exports = {
-    app,
-    listen: (port, callback) => {
-      app.listen(port, callback);
-    }
-  };
+  module.exports = app;
